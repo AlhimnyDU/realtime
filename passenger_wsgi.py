@@ -17,4 +17,4 @@
  
  
  
-from hello import app as application
+from main import app as application
