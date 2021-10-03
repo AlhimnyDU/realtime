@@ -20,6 +20,7 @@ app = Flask(__name__)
 
 file_handler = FileHandler('errorlog.txt')
 file_handler.setLevel(WARNING)
+app.logger.addHandler(file_handler)
 app.config.from_object(__name__)
 UPLOAD_FOLDER = './static/gambar/'
 UPLOAD_FOLDER = './static/input/'

@@ -1,0 +1,93 @@
+Exception on /prodi_piechart/5 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 215, in prodi_piechart
+    df = pd.read_excel(excel)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\util\_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/excel/kuesioner/Tracer_Study_Lulusan_2018.xlsx'
+Exception on /prodi_piechart/5 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 215, in prodi_piechart
+    df = pd.read_excel(excel)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\util\_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/excel/kuesioner/Tracer_Study_Lulusan_2018.xlsx'
+Exception on /prodi_piechart/5 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 215, in prodi_piechart
+    df = pd.read_excel(excel)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\util\_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/excel/kuesioner/Tracer_Study_Lulusan_2018.xlsx'
