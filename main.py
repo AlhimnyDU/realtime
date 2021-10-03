@@ -1,5 +1,6 @@
 import os
 from flask import Flask, flash, url_for, request, render_template, session
+from logging import FileHandler, WARNING
 from werkzeug.utils import redirect, secure_filename
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,6 +17,9 @@ import textwrap
 
 
 app = Flask(__name__)
+
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
 app.config.from_object(__name__)
 UPLOAD_FOLDER = './static/gambar/'
 UPLOAD_FOLDER = './static/input/'
