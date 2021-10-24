@@ -91,3 +91,470 @@ Traceback (most recent call last):
   File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
     with open(filename, "rb") as f:
 FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/excel/kuesioner/Tracer_Study_Lulusan_2018.xlsx'
+Exception on /piechart/5 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 67, in piechart
+    excel="../public_html/cdc/excel/kuesioner/"+kuesioner[4]
+TypeError: 'NoneType' object is not subscriptable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 69, in piechart
+    df = pd.read_excel(excel)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\util\_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/excel/kuesioner/Tracer_Study_Lulusan_2020_(UJI_COBA).xlsx'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 69, in piechart
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\util\_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/excel/kuesioner/Tracer_Study_Lulusan_2020_(UJI_COBA).xlsx'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 71, in piechart
+    df = pd.read_excel(excel)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\util\_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\pandas\io\excel\_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/Proyek/xampp/ts_bka/excel/kuesionerTracer_Study_Lulusan_2020_(UJI_COBA).xlsx'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 108, in piechart
+    plt.savefig("../public_html/cdc/data_olah/"+nama_file)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\pyplot.py", line 859, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\figure.py", line 2311, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\backends\backend_qt5agg.py", line 81, in print_figure
+    super().print_figure(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\backend_bases.py", line 2217, in print_figure
+    **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\backend_bases.py", line 1639, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\backends\backend_agg.py", line 512, in print_png
+    dpi=self.figure.dpi, metadata=metadata, pil_kwargs=pil_kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\image.py", line 1605, in imsave
+    image.save(fname, **pil_kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\PIL\Image.py", line 2155, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: '../public_html/cdc/data_olah/dfa5fb69fce8250cc0407e06b35421c8.png'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 111, in piechart
+    # rmv='../public_html/cdc/data_olah/'+fitur[3]
+FileNotFoundError: [WinError 3] The system cannot find the path specified: '../public_html/cdc/data_olah/d132c14564f02e6a1651b448c3c08afd.png'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 364, in array_diff
+    return list(set(a) - set(b))
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 364, in array_diff
+    return list(set(a) - set(b))
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 364, in array_diff
+    return list(set(a) - set(b))
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 364, in array_diff
+    return list(set(a) - set(b))
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 364, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 86, in piechart
+    cek = array_diff(index,df_olah[fitur[1]].values)
+  File "D:/Proyek/TA/realtime/main.py", line 365, in array_diff
+    return [x for x in a if x not in b]
+TypeError: 'function' object is not iterable
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 94, in piechart
+    atribut.pop(j)
+TypeError: 'tuple' object cannot be interpreted as an integer
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 111, in piechart
+    plt.pie(df_olah['NRP'], labels=atribut, autopct=make_autopct(df_olah['NRP']), labeldistance=1.2, explode=explode)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\pyplot.py", line 2834, in pie
+    **({"data": data} if data is not None else {}))
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\axes\_axes.py", line 3024, in pie
+    raise ValueError("'label' must be of length 'x'")
+ValueError: 'label' must be of length 'x'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 111, in piechart
+    plt.pie(df_olah['NRP'], labels=atribut, autopct=make_autopct(df_olah['NRP']), labeldistance=1.2, explode=explode)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\pyplot.py", line 2834, in pie
+    **({"data": data} if data is not None else {}))
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\matplotlib\axes\_axes.py", line 3024, in pie
+    raise ValueError("'label' must be of length 'x'")
+ValueError: 'label' must be of length 'x'
+Exception on /piechart/18 [GET]
+Traceback (most recent call last):
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program\Anaconda\envs\TA\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Proyek/TA/realtime/main.py", line 96, in piechart
+    print(atribut(j))
+TypeError: 'list' object is not callable
