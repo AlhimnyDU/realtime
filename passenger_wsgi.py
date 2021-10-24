@@ -1,20 +1,20 @@
-#import os
-#import sys
+import os
+import sys
   
-#sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(__file__))
  
-#def application(environ, start_response):
+def application(environ, start_response):
  
- #start_response('200 OK', [('Content-Type', 'text/plain')])
+ start_response('200 OK', [('Content-Type', 'text/plain')])
  
- #message = 'It works!\n'
+ message = 'It works!\n'
  
- #version = 'Python %s\n' % sys.version.split()[0]
+ version = 'Python %s\n' % sys.version.split()[0]
  
- #response = '\n'.join([message, version])
+ response = '\n'.join([message, version])
  
- #return [response.encode()]
+ return [response.encode()]
  
  
  
-from main import app as application
+# from main import app as application
